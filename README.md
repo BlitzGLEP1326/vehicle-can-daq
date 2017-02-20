@@ -2,6 +2,7 @@
 CAN Bus project for automotive racing data acquisition. 
 
 Software:
+- Linux OS (Raspbian)
 - SocketCAN
 - Qt Framework
 - C++
