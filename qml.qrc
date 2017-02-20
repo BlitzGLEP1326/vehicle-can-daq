@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>RpmGaugeStyle.qml</file>
+        <file>SpeedometerGaugeStyle.qml</file>
+        <file>FuelGaugeStyle.qml</file>
+        <file>FuelGauge.qml</file>
+        <file>FuelCircularGaugeStyle.qml</file>
+        <file>CoolantTempCircularGaugeStyle.qml</file>
+        <file>../images/fuel_icon.png</file>
+        <file>../images/bmw_m_logo.png</file>
+        <file>daq.qml</file>
+        <file>TachGaugeStyle.qml</file>
+        <file>ColorFormatter.js</file>
+        <file>../images/fuel_gauge.png</file>
+        <file>../images/coolant_icon.png</file>
+        <file>../images/tach_mask.png</file>
+        <file>mainAnalog.qml</file>
+        <file>main.qml</file>
+        <file>../images/tachometer_mask.png</file>
+    </qresource>
+</RCC>
