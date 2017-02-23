@@ -7,6 +7,8 @@ class CanDataObject
 {
 public:
     CanDataObject();
+    CanDataObject(const unsigned short&, const unsigned short&, const unsigned short&, const short&, const short&, const short&, const short&);
+    CanDataObject(const CanDataObject&);
     unsigned short getEngineRpm() const;
     unsigned short getVehicleSpeed() const;
     unsigned short getFuelLevel() const;
