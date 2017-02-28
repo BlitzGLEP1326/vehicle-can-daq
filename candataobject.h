@@ -23,13 +23,6 @@ public:
     void setCoolantTempF(const short&);
     void setOilTempC(const short&);
     void setOilTempF(const short&);
-    unsigned short decodeEngineRpm(const QByteArray&) const;
-    unsigned short decodeVehicleSpeed(const QByteArray&) const;
-    unsigned short decodeFuelLevel(const QByteArray&) const;
-    short decodeCoolantTempC(const QByteArray&) const;
-    short decodeCoolantTempF(const QByteArray&) const;
-    short decodeOilTempC(const QByteArray&) const;
-    short decodeOilTempF(const QByteArray&) const;
 private:
     unsigned short engine_rpm_;
     unsigned short vehicle_speed_;
