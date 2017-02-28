@@ -5,7 +5,8 @@ QT += serialbus
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    candataobject.cpp
+    candataobject.cpp \
+    e46canbusframe.cpp
 
 RESOURCES += qml.qrc
 
@@ -16,6 +17,7 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 HEADERS += \
-    candataobject.h
+    candataobject.h \
+    e46canbusframe.h
 
 DISTFILES +=
