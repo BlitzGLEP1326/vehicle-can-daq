@@ -1,7 +1,7 @@
 TEMPLATE = app
 
-QT += qml quick
-QT += serialbus
+QT += qml quick \
+    serialbus
 CONFIG += c++11
 
 SOURCES += main.cpp \

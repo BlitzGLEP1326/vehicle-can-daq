@@ -43,6 +43,7 @@ unsigned short E46CanBusFrame::decodeVehicleSpeed(const QByteArray &payload) con
     */
 
     if(frameId() != vehicle_speed_id_)
+        return 0;
 
     QByteArray data = payload;
     return 0;

@@ -3,7 +3,7 @@
 
 #include <QCanBusFrame>
 
-class E46CanBusFrame : QCanBusFrame
+class E46CanBusFrame : public QCanBusFrame
 {
     public:
         E46CanBusFrame();
