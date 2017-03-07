@@ -17,5 +17,6 @@
         <file>mainAnalog.qml</file>
         <file>main.qml</file>
         <file>../images/tachometer_mask.png</file>
+        <file>mainDemo.qml</file>
     </qresource>
 </RCC>
