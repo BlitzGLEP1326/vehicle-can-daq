@@ -4,7 +4,14 @@ import QtQuick.Extras 1.4
 import QtQuick.Controls.Styles 1.4
 import "ColorFormatter.js" as CF
 
+
 Window {
+    property int rpmValue
+    property int speedValue
+    property int fuelValue
+    property int coolantValue
+    property int oilValue
+
     id: root
     visible: true
     width: 800
@@ -26,22 +33,6 @@ Window {
         anchors.horizontalCenterOffset: 0
         anchors.centerIn: parent
 
-        // Animation for Tachometer.
-        Timer {
-            running: true
-            repeat: true
-            interval: 4000
-            onTriggered: tachGauge.value = tachGauge.value == tachGauge.maximumValue ? 0 : tachGauge.maximumValue
-        }
-
-        // Animation for Fuel Gauge.
-        Timer {
-            running: true
-            repeat: true
-            interval: 4500
-            onTriggered: fuelGauge.value = fuelGauge.value == fuelGauge.maximumValue ? 0 : fuelGauge.maximumValue
-        }
-
         Gauge {
             id: tachGauge
             x: -16
@@ -52,15 +43,9 @@ Window {
             minimumValue: 0
             maximumValue: 10000
             tickmarkStepSize: 75
-            value: 0
+            value: rpmValue
             orientation: Qt.Horizontal
             anchors.top: parent.top
-
-            Behavior on value {
-                NumberAnimation {
-                    duration: 5000
-                }
-            }
         }
 
         Text {
@@ -89,15 +74,9 @@ Window {
             minimumValue: 0
             maximumValue: 100
             tickmarkStepSize: 25
-            value: 0
+            value: fuelValue
             orientation: Qt.Vertical
             anchors.verticalCenter: parent.verticalCenter
-
-            Behavior on value {
-                NumberAnimation {
-                    duration: 4000
-                }
-            }
         }
 
         Text {
